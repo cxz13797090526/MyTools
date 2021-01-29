@@ -15,7 +15,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="worktools",
-    version="0.0.1",
+    version="0.0.2",
     author="Cheng Xiaozhao",
     author_email="867616144@qq.com",
     description="Some common tools for the convenience of work and study",

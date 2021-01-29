@@ -5,11 +5,11 @@
 @IDE     ：PyCharm
 @Author  ：Cheng Xiaozhao
 @Date    ：
-@Desc    ：
+@Desc    ：读取txt文档，获取相关信息     若需修改此函数，应通过对应测试用例的自动检验才可以
 """
 
 
-def get_mul_lines(txt_path, return_lines=True, return_lens=False):
+def get_multi_lines(txt_path, return_lines=True, return_lens=False):
     """
     获取TXT文档的多行内容，及对应的行数
 
@@ -46,5 +46,10 @@ def get_mul_lines(txt_path, return_lines=True, return_lens=False):
 if __name__ == '__main__':
     file_path = "test_data/map_dict.txt"
 
-    lens = get_mul_lines(file_path, return_lines=False)
+    lens = get_multi_lines(file_path)
     print(lens)
+
+"""
+cmd
+PYTHONPATH=. python txt_process/read_file.py
+"""
